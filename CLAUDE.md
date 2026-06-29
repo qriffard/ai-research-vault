@@ -110,11 +110,16 @@ context window. Use extraction scripts in `scripts/` whenever possible.
 
 | Script | Input | Usage |
 |--------|-------|-------|
+| `extract-arxiv.py` | arXiv URL or ID | `python scripts/extract-arxiv.py <url-or-id> raw/<slug>.md` |
 | `extract-pdf.py` | PDF file | `python scripts/extract-pdf.py raw/<slug>.pdf` |
 | `extract-youtube.py` | URL or VTT file | `python scripts/extract-youtube.py <url> raw/<slug>.md` |
 | `outline.py` | Any markdown file | `python scripts/outline.py raw/<slug>.md` — produces compact heading outline |
 
 Other sources:
+- **arXiv paper** → always use `extract-arxiv.py`, never the PDF extractor.
+  It downloads the LaTeX source (the actual source of truth) and converts to
+  markdown via pandoc, preserving equations as `$...$` / `$$...$$`. The output
+  is a standard `.md` file in `raw/`, browsable in Obsidian. Requires: `pandoc`.
 - **Web article** → `WebFetch`; save to `raw/<slug>.md`.
 - **Local file** → copy into `raw/`.
 - **YouTube / video** → if `yt-dlp` is available, pull the transcript (`yt-dlp --write-auto-subs --skip-download --sub-format vtt <url>`) and save it as `raw/<slug>.txt`. If it isn't installed, ask the human whether to install it; if they decline, capture the watch page's title, channel, and description via `WebFetch` into `raw/<slug>.md` and note that no full transcript was captured.
