@@ -2,15 +2,16 @@
 """Extract an arXiv paper's LaTeX source and convert to markdown.
 
 Usage:
-    python extract-arxiv.py <arxiv-url-or-id> [OUTPUT.md]
+    python extract-arxiv.py <arxiv-url-or-id> [OUTPUT.md] [--assets-dir DIR]
 
 Examples:
-    python extract-arxiv.py 2402.14207 raw/storm-paper.md
+    python extract-arxiv.py 2402.14207 raw/storm-paper.md --assets-dir raw/assets/storm-paper
     python extract-arxiv.py https://arxiv.org/abs/2402.14207 raw/storm-paper.md
 
 Downloads the LaTeX source tarball from arXiv, finds the main .tex file,
 converts it to markdown via pandoc (preserving LaTeX math as $...$ / $$...$$),
-and writes the result.
+extracts figures into an assets directory, and rewrites image references to
+point to the local copies.
 
 Requires: pandoc
 """
@@ -124,17 +125,80 @@ def fetch_metadata(arxiv_id: str) -> dict:
     }
 
 
-def convert_to_markdown(tex_path: Path, meta: dict) -> str:
+IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".gif", ".svg", ".pdf", ".eps", ".tiff", ".bmp"}
+
+
+def extract_figures(extract_dir: Path, assets_dir: Path) -> dict[str, str]:
+    """Copy figure files from the extracted source to assets_dir.
+
+    Returns a mapping from original relative path (as referenced in LaTeX)
+    to the new path relative to the wiki root (for use in markdown links).
+    """
+    assets_dir.mkdir(parents=True, exist_ok=True)
+    path_map = {}
+
+    for f in extract_dir.rglob("*"):
+        if not f.is_file():
+            continue
+        if f.suffix.lower() not in IMAGE_EXTENSIONS:
+            continue
+
+        rel = f.relative_to(extract_dir)
+        dest = assets_dir / rel.name
+        # Avoid collisions — if a file with the same name exists from a subdir
+        if dest.exists() and dest.stat().st_size != f.stat().st_size:
+            dest = assets_dir / f"{rel.stem}-{rel.parent.name}{rel.suffix}"
+
+        shutil.copy2(f, dest)
+
+        # Map multiple forms LaTeX might reference this figure:
+        # "figures/overview.png", "figures/overview", "overview.png", "overview"
+        rel_str = str(rel)
+        stem_rel = str(rel.with_suffix(""))
+        name = rel.name
+        stem_name = rel.stem
+
+        asset_path = str(dest)
+        for key in {rel_str, stem_rel, name, stem_name}:
+            path_map[key] = asset_path
+
+    return path_map
+
+
+def rewrite_image_paths(md: str, path_map: dict[str, str]) -> str:
+    """Rewrite markdown image references to point to local asset copies."""
+    def replace_match(m):
+        alt = m.group(1)
+        orig_path = m.group(2)
+        # Try exact match, then without leading ./
+        clean = orig_path.lstrip("./")
+        local = path_map.get(orig_path) or path_map.get(clean)
+        if not local:
+            # Try matching just the filename or stem
+            from pathlib import PurePosixPath
+            p = PurePosixPath(orig_path)
+            local = path_map.get(p.name) or path_map.get(p.stem)
+        if local:
+            return f"![{alt}]({local})"
+        return m.group(0)
+
+    return re.sub(r"!\[([^\]]*)\]\(([^)]+)\)", replace_match, md)
+
+
+def convert_to_markdown(tex_path: Path, meta: dict, path_map: dict[str, str] | None = None) -> str:
     """Convert LaTeX to markdown via pandoc, prepend metadata header."""
+    pandoc_args = [
+        "pandoc",
+        str(tex_path),
+        "-f", "latex",
+        "-t", "markdown",
+        "--wrap=none",
+        "--markdown-headings=atx",
+        "--extract-media=.",
+    ]
+
     result = subprocess.run(
-        [
-            "pandoc",
-            str(tex_path),
-            "-f", "latex",
-            "-t", "markdown",
-            "--wrap=none",
-            "--markdown-headings=atx",
-        ],
+        pandoc_args,
         capture_output=True,
         text=True,
         timeout=120,
@@ -147,6 +211,9 @@ def convert_to_markdown(tex_path: Path, meta: dict) -> str:
     body = result.stdout
     if not body.strip():
         raise RuntimeError(f"pandoc produced empty output. stderr: {result.stderr[:500]}")
+
+    if path_map:
+        body = rewrite_image_paths(body, path_map)
 
     # Build a metadata header
     header_parts = []
@@ -166,21 +233,20 @@ def convert_to_markdown(tex_path: Path, meta: dict) -> str:
 
 
 def main():
-    if len(sys.argv) < 2:
-        print(f"Usage: {sys.argv[0]} <arxiv-url-or-id> [OUTPUT.md]", file=sys.stderr)
-        sys.exit(1)
+    import argparse
+    parser = argparse.ArgumentParser(description="Extract arXiv paper to markdown")
+    parser.add_argument("source", help="arXiv URL or ID (e.g. 2402.14207)")
+    parser.add_argument("output", nargs="?", help="Output .md path (default: derived from title)")
+    parser.add_argument("--assets-dir", help="Directory to copy figures into (default: raw/assets/<slug>/)")
+    args = parser.parse_args()
 
-    source = sys.argv[1]
-    arxiv_id = parse_arxiv_id(source)
-
+    arxiv_id = parse_arxiv_id(args.source)
     meta = fetch_metadata(arxiv_id)
     title = meta.get("title", arxiv_id)
+    slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")[:60]
 
-    if len(sys.argv) > 2:
-        output_path = Path(sys.argv[2])
-    else:
-        slug = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")[:60]
-        output_path = Path(f"{slug}.md")
+    output_path = Path(args.output) if args.output else Path(f"{slug}.md")
+    assets_dir = Path(args.assets_dir) if args.assets_dir else output_path.parent / "assets" / (output_path.stem)
 
     print(f"Fetching arXiv source for {arxiv_id} ({title})...")
 
@@ -190,7 +256,11 @@ def main():
         main_tex = find_main_tex(extract_dir)
         print(f"Main .tex file: {main_tex.name}")
 
-        md = convert_to_markdown(main_tex, meta)
+        path_map = extract_figures(extract_dir, assets_dir)
+        fig_count = len(set(path_map.values()))
+        print(f"Extracted {fig_count} figure(s) → {assets_dir}/")
+
+        md = convert_to_markdown(main_tex, meta, path_map)
 
     output_path.write_text(md)
     print(f"Extracted {len(md):,} chars → {output_path}")
