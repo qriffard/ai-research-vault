@@ -6,6 +6,8 @@
 > scanning everything here. The LLM updates this on every ingest.
 
 ## Recently Active
+- [[co-storm]] — full paper ingest from arXiv 2408.15232 (2026-06-29)
+- [[wildseek]] — new entity page, evaluation dataset from Co-STORM (2026-06-29)
 - [[storm]] — STORM system page, first ingest (2026-06-29)
 - [[overview]] — evolving thesis initialized (2026-06-29)
 
@@ -17,6 +19,7 @@
 
 ## Sources
 - [[storm]] — Assisting in Writing Wikipedia-like Articles From Scratch with Large Language Models (2026-06-29)
+- [[co-storm]] — Into the Unknown Unknowns: Engaged Human Learning through Participation in LM Agent Conversations (2026-06-29)
 
 ## Entities
 - [[stanford-oval]] — Stanford Open Virtual Assistant Lab
@@ -24,6 +27,7 @@
 - [[yijia-shao]] — PhD student, lead author of STORM
 - [[yucheng-jiang]] — PhD student, lead author of Co-STORM
 - [[freshwiki]] — Benchmark dataset of 100 high-quality recent Wikipedia articles
+- [[wildseek]] — In-the-wild information-seeking dataset for evaluating complex search tools
 
 ## Concepts
 - [[storm]] — LLM system for automated Wikipedia-like article generation

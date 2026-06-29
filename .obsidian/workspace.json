@@ -177,5 +177,20 @@
     }
   },
   "active": "c5f6576c28b9b22c",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "wiki/wildseek.md",
+    "raw/co-storm.md",
+    "raw/assets/co-storm/thumbnail.jpeg",
+    "raw/assets/co-storm/taxonomy.pdf",
+    "raw/assets/co-storm/question_quality.pdf",
+    "raw/assets/co-storm/placeholder1.pdf",
+    "raw/assets/co-storm/method_backup.pdf",
+    "raw/assets/co-storm/method.pdf",
+    "raw/assets/co-storm/image1.png",
+    "raw/assets/co-storm/human_evaluation_demo.pdf",
+    "raw/assets/co-storm/human_eval_pref_rubrics.pdf",
+    "raw/assets/co-storm/human_eval_pref_rag_rubrics.pdf",
+    "raw/assets/co-storm/human_eval_pref.pdf",
+    "raw/assets/co-storm/human_eval_method_rubrics.pdf"
+  ]
 }
