@@ -6,6 +6,7 @@
 > scanning everything here. The LLM updates this on every ingest.
 
 ## Recently Active
+- [[storm-claude-skill-video]] — practitioner STORM implementation as Claude skill (2026-06-29)
 - [[co-storm]] — full paper ingest from arXiv 2408.15232 (2026-06-29)
 - [[wildseek]] — new entity page, evaluation dataset from Co-STORM (2026-06-29)
 - [[storm]] — STORM system page, first ingest (2026-06-29)
@@ -20,6 +21,7 @@
 ## Sources
 - [[storm]] — Assisting in Writing Wikipedia-like Articles From Scratch with Large Language Models (2026-06-29)
 - [[co-storm]] — Into the Unknown Unknowns: Engaged Human Learning through Participation in LM Agent Conversations (2026-06-29)
+- [[storm-claude-skill-video]] — Nate Herk: Stanford's Method Turns Claude Into a PhD Level Research Team (2026-06-29)
 
 ## Entities
 - [[stanford-oval]] — Stanford Open Virtual Assistant Lab

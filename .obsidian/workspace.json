@@ -178,6 +178,9 @@
   },
   "active": "c5f6576c28b9b22c",
   "lastOpenFiles": [
+    "wiki/storm-claude-skill-video.md",
+    "raw/co-storm-demo-video.md",
+    "raw/stanford-s-method-turns-claude-into-a-phd-level-research-tea.en.vtt",
     "wiki/wildseek.md",
     "raw/co-storm.md",
     "raw/assets/co-storm/thumbnail.jpeg",
@@ -190,7 +193,6 @@
     "raw/assets/co-storm/human_evaluation_demo.pdf",
     "raw/assets/co-storm/human_eval_pref_rubrics.pdf",
     "raw/assets/co-storm/human_eval_pref_rag_rubrics.pdf",
-    "raw/assets/co-storm/human_eval_pref.pdf",
-    "raw/assets/co-storm/human_eval_method_rubrics.pdf"
+    "raw/assets/co-storm/human_eval_pref.pdf"
   ]
 }
