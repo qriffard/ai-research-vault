@@ -21,3 +21,8 @@ Updated: `index.md`, `_hot.md`.
 Source: `raw/co-storm-demo-video.md` (60,203 chars, YouTube transcript via yt-dlp). 12-min tutorial on implementing STORM as a Claude skill with 5 fixed perspectives and 2-pass verification.
 Pages created: `wiki/storm-claude-skill-video.md`.
 Updated: `index.md`, `_hot.md`.
+
+## [2026-07-04] ingest | NVIDIA Nemotron 3 Ultra (landing page + tech report)
+Sources: `raw/nemotron-3-ultra.md` (landing page, WebFetch+verified via direct curl) and `raw/nemotron-3-ultra-tech-report.md` (213,199 chars, PDF→markdown via pymupdf4llm — installed this session, no backend was previously available). First source in a new domain for this wiki (LLM model releases), separate from the STORM cluster.
+Pages created: `wiki/nemotron-3-ultra.md` (source/entity page — architecture, pretraining, post-training incl. MOPD results table, quantization, inference), `wiki/multi-teacher-on-policy-distillation.md` (concept page for the MOPD technique).
+Updated: `index.md`, `_hot.md`.

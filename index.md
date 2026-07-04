@@ -6,6 +6,8 @@
 > scanning everything here. The LLM updates this on every ingest.
 
 ## Recently Active
+- [[nemotron-3-ultra]] — NVIDIA's 550B/55B MoE hybrid Mamba-Attention model, landing page + tech report ingested (2026-07-04)
+- [[multi-teacher-on-policy-distillation]] — new concept page, MOPD post-training technique from Nemotron 3 Ultra (2026-07-04)
 - [[storm-claude-skill-video]] — practitioner STORM implementation as Claude skill (2026-06-29)
 - [[co-storm]] — full paper ingest from arXiv 2408.15232 (2026-06-29)
 - [[wildseek]] — new entity page, evaluation dataset from Co-STORM (2026-06-29)
