@@ -6,6 +6,7 @@
 > scanning everything here. The LLM updates this on every ingest.
 
 ## Recently Active
+- [[graphify]] — knowledge-graph skill for AI coding assistants; **unverified trust caveat** (stars mismatch, young repo, typosquat-pattern package name) (2026-07-05)
 - [[nemotron-3-ultra]] — NVIDIA's 550B/55B MoE hybrid Mamba-Attention model, landing page + tech report ingested (2026-07-04)
 - [[multi-teacher-on-policy-distillation]] — new concept page, MOPD post-training technique from Nemotron 3 Ultra (2026-07-04)
 - [[storm-claude-skill-video]] — practitioner STORM implementation as Claude skill (2026-06-29)
@@ -24,6 +25,8 @@
 - [[storm]] — Assisting in Writing Wikipedia-like Articles From Scratch with Large Language Models (2026-06-29)
 - [[co-storm]] — Into the Unknown Unknowns: Engaged Human Learning through Participation in LM Agent Conversations (2026-06-29)
 - [[storm-claude-skill-video]] — Nate Herk: Stanford's Method Turns Claude Into a PhD Level Research Team (2026-06-29)
+- [[nemotron-3-ultra]] — NVIDIA Nemotron 3 Ultra tech report, 550B/55B MoE hybrid Mamba-Attention model (2026-07-04)
+- [[graphify]] — knowledge-graph skill for AI coding assistants — **unverified trust caveat** (2026-07-05)
 
 ## Entities
 - [[stanford-oval]] — Stanford Open Virtual Assistant Lab
@@ -38,6 +41,7 @@
 - [[co-storm]] — Collaborative extension of STORM with human-in-the-loop
 - [[perspective-guided-question-asking]] — Multi-perspective question strategy
 - [[simulated-conversation]] — Grounded multi-turn conversation simulation
+- [[multi-teacher-on-policy-distillation]] — Dense token-level distillation from specialized teachers into one student (MOPD)
 
 ## Tools & links
 - https://github.com/stanford-oval/storm — STORM source code [knowledge-curation, article-generation]

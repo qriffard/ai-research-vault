@@ -26,3 +26,9 @@ Updated: `index.md`, `_hot.md`.
 Sources: `raw/nemotron-3-ultra.md` (landing page, WebFetch+verified via direct curl) and `raw/nemotron-3-ultra-tech-report.md` (213,199 chars, PDF→markdown via pymupdf4llm — installed this session, no backend was previously available). First source in a new domain for this wiki (LLM model releases), separate from the STORM cluster.
 Pages created: `wiki/nemotron-3-ultra.md` (source/entity page — architecture, pretraining, post-training incl. MOPD results table, quantization, inference), `wiki/multi-teacher-on-policy-distillation.md` (concept page for the MOPD technique).
 Updated: `index.md`, `_hot.md`.
+
+## [2026-07-05] ingest | Graphify (landing page + GitHub README) — unverified trust caveat
+Sources: `raw/graphify.md` (landing page, direct curl + tag-strip) and `raw/graphify-readme.md` (GitHub README, `safishamsi/graphify@main`). Tool: multi-modal knowledge-graph builder for AI coding assistants (Tree-sitter + LLM extraction + Leiden clustering).
+**Flagged before full capture**: landing page's "3.7k+ GitHub Stars" badge does not match the actual repo (77,603 stars via API, >20x mismatch); repo is 3 months old (created 2026-04-03); installable package named `graphifyy` not `graphify`; repo transferred from an individual account to an org between when the copy was written and capture time. Presented these to the human, who chose full capture with the caveat documented prominently in the page rather than pointer-only or skip. Nothing installed or executed.
+Pages created: `wiki/graphify.md` (source page, trust caveat in a blockquote at the top).
+Updated: `index.md`, `_hot.md`.
