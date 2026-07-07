@@ -178,6 +178,12 @@
   },
   "active": "c5f6576c28b9b22c",
   "lastOpenFiles": [
+    "scripts/extract-podcast.py",
+    "wiki/graphify.md",
+    "raw/graphify.md",
+    "raw/graphify-readme.md",
+    "wiki/multi-teacher-on-policy-distillation.md",
+    "wiki/nemotron-3-ultra.md",
     "wiki/storm-claude-skill-video.md",
     "raw/co-storm-demo-video.md",
     "raw/stanford-s-method-turns-claude-into-a-phd-level-research-tea.en.vtt",

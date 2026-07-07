@@ -34,8 +34,9 @@ a lint, as defined under Operations below).
   step of ingest (see Operations).
   Images live in `raw/assets/`. You cannot read markdown with inline images in one pass — read the text first, then view referenced images separately when needed.
 - `scripts/` — reusable extraction scripts (e.g. `extract-pdf.py`,
-  `extract-youtube.py`, `outline.py`). Run these during the Fetch phase of
-  ingest to avoid ad-hoc parsing. See "Fetch scripts" under Ingest.
+  `extract-youtube.py`, `extract-podcast.py`, `outline.py`). Run these during
+  the Fetch phase of ingest to avoid ad-hoc parsing. See "Fetch scripts" under
+  Ingest.
 - `wiki/` — markdown pages you own: summaries, entity pages, concept pages,
   comparisons, an `overview.md` synthesis. You create and update these.
 - `log.md` — append-only chronological record.
@@ -113,6 +114,7 @@ context window. Use extraction scripts in `scripts/` whenever possible.
 | `extract-arxiv.py` | arXiv URL or ID | `python scripts/extract-arxiv.py <url-or-id> raw/<slug>.md` (figures go to `raw/assets/<slug>/`) |
 | `extract-pdf.py` | PDF file | `python scripts/extract-pdf.py raw/<slug>.pdf` |
 | `extract-youtube.py` | URL or VTT file | `python scripts/extract-youtube.py <url> raw/<slug>.md` |
+| `extract-podcast.py` | Apple Podcasts / RSS / audio URL | `python scripts/extract-podcast.py <url> raw/<slug>.md` |
 | `outline.py` | Any markdown file | `python scripts/outline.py raw/<slug>.md` — produces compact heading outline |
 
 Other sources:
@@ -132,6 +134,16 @@ Other sources:
 - **Web article** → `WebFetch`; save to `raw/<slug>.md`.
 - **Local file** → copy into `raw/`.
 - **YouTube / video** → if `yt-dlp` is available, pull the transcript (`yt-dlp --write-auto-subs --skip-download --sub-format vtt <url>`) and save it as `raw/<slug>.txt`. If it isn't installed, ask the human whether to install it; if they decline, capture the watch page's title, channel, and description via `WebFetch` into `raw/<slug>.md` and note that no full transcript was captured.
+- **Podcast** → `python scripts/extract-podcast.py <url> raw/<slug>.md`. Accepts
+  an Apple Podcasts episode link, a direct RSS feed URL, or a direct audio URL.
+  Uses the show's official transcript when the feed publishes one (Podcasting
+  2.0 `podcast:transcript`); otherwise downloads the audio and transcribes it
+  locally with whisper.cpp (`brew install ffmpeg whisper-cpp` — the ggml model
+  auto-downloads once, ~1.5GB, cached in `~/.cache/whisper-cpp/` for reuse). If
+  those tools aren't installed, ask the human whether to install them; if they
+  decline, capture just the episode title/show/description via `WebFetch` into
+  `raw/<slug>.md` and note that no transcript was captured. Spotify-only
+  episodes aren't supported — ask for the Apple Podcasts or RSS link instead.
 
 After extraction, always run `python scripts/outline.py raw/<slug>.md`.
 
