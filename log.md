@@ -119,3 +119,15 @@ review), a concrete design checklist for my own HTML artifacts, and the relation
 to [[token-efficiency]] (cheaper vs better; shared deterministic-measurement DNA).
 Added backlinks from all three tool pages; linked from index (Concepts + Recently
 Active) and _hot.md. Flagged [[llm-laziness]] as a still-open candidate page.
+
+## [2026-07-09] lint | First lint pass (13 ingests/creates since wiki init)
+Scope: 26 wiki pages. Orphans: none. Captures: no pending/failed. Dangling
+wikilinks: all intentional future-page markers (latentmoe, mixed-initiative-
+interaction, mind-map-for-llm, dspy, litellm, my-find-research-papers-skill) or
+CLAUDE.md schema examples (wikilinks, page-slug, _index-<domain>) — none real,
+kept per "link liberally". Two healthy concept clusters with hubs:
+[[token-efficiency]] (caveman/headroom/graphify/codeburn) and [[anti-slop-design]]
+(impeccable/taste-skill/emil-kowalski-skills) + [[llm-laziness]]; neither >8 pages
+so no sub-index promotion yet. _hot.md was ~991 tokens (2x target) — trimmed the
+design-cluster bullet back toward target. No contradictions found (graphify's
+unverified caveat still stands; headroom's young-repo caveat noted).

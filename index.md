@@ -6,6 +6,7 @@
 > scanning everything here. The LLM updates this on every ingest.
 
 ## Recently Active
+- [[llm-laziness]] — why LLMs truncate/produce brevity (behavioral artifact, not capability): 4 root causes + remediation; mechanism behind [[anti-slop-design]] (2026-07-09)
 - [[anti-slop-design]] — synthesis of the "agents with taste" cluster (impeccable/taste-skill/emil-kowalski-skills): shared slop root cause, common levers, deterministic-review theme (2026-07-09)
 - [[emil-kowalski-skills]] — animation-first design skills for AI agents (Emil Kowalski, animations.dev): review-animations, animation-vocabulary, apple-design (2026-07-09)
 - [[impeccable]] — design-language agent skill (Paul Bakaus): 23 commands + 46 deterministic detector rules; anti-slop design guidance for AI coding agents (2026-07-09)
@@ -61,6 +62,7 @@
 - [[multi-teacher-on-policy-distillation]] — Dense token-level distillation from specialized teachers into one student (MOPD)
 - [[token-efficiency]] — the token-efficiency tooling landscape: input vs output compression, measurement, eval-rigor lesson (ties headroom/caveman/graphify/codeburn)
 - [[anti-slop-design]] — the "agents with taste" landscape: why LLMs slop, common anti-slop levers, deterministic design review (ties impeccable/taste-skill/emil-kowalski-skills)
+- [[llm-laziness]] — output truncation & brevity bias: root causes (training bias, RLHF/compute, output limits, cognitive shortcuts) + remediation
 
 ## Tools & links
 - https://github.com/stanford-oval/storm — STORM source code [knowledge-curation, article-generation]

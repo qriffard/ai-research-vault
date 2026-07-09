@@ -53,8 +53,8 @@ articulating the *mechanism* behind the failure it fixes.
   style-specific skills* + tunable dials vs. impeccable's *one skill / 23 commands
   / deterministic detector*. Worth comparing approaches if I codify a house style.
 - **The `research/laziness/` corpus** is genuinely useful reading on LLM
-  degeneration modes — relevant beyond design (any generate-over-NL task), and a
-  candidate for its own concept page ([[llm-laziness]]) if it recurs.
+  degeneration modes — relevant beyond design (any generate-over-NL task);
+  synthesized into [[llm-laziness]].
 - **Concrete anti-slop levers** (VARIANCE/MOTION/DENSITY dials, em-dash ban, GSAP
   skeletons) are a pragmatic checklist for the HTML artifacts I generate.
 
