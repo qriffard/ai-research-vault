@@ -6,6 +6,7 @@
 > scanning everything here. The LLM updates this on every ingest.
 
 ## Recently Active
+- [[token-efficiency]] — synthesis of the token-efficiency tooling landscape (input vs output compression, measurement, eval-rigor lesson) tying [[headroom]]/[[caveman]]/[[graphify]]/[[codeburn]] (2026-07-09)
 - [[headroom]] — context/input compression layer (JSON/AST/prose compressors, reversible CCR, proxy/MCP); 60–95% JSON / 15–20% coding token cut; input-side complement to [[caveman]] (2026-07-09)
 - [[codeburn]] — local-first AI-coding token/cost observability CLI (31 tools); 14-detector `optimize` waste scanner; the A/B measurement tool [[caveman]] recommends (2026-07-09)
 - [[caveman]] — viral (87k★, verified) Claude Code token-compression skill; ~65% *output*-only cut, honest net-negative cases, reusable 3-arm eval methodology (2026-07-09)
@@ -52,6 +53,7 @@
 - [[perspective-guided-question-asking]] — Multi-perspective question strategy
 - [[simulated-conversation]] — Grounded multi-turn conversation simulation
 - [[multi-teacher-on-policy-distillation]] — Dense token-level distillation from specialized teachers into one student (MOPD)
+- [[token-efficiency]] — the token-efficiency tooling landscape: input vs output compression, measurement, eval-rigor lesson (ties headroom/caveman/graphify/codeburn)
 
 ## Tools & links
 - https://github.com/stanford-oval/storm — STORM source code [knowledge-curation, article-generation]

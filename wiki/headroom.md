@@ -69,5 +69,4 @@ structured-data, not a universal rate.
   research/eval data: compress structured outputs hard, code/prose gently.
 - Completes the vault's token cluster — [[caveman]] (output), Headroom (input,
   reversible), [[graphify]] (context via knowledge graph, unverified),
-  [[codeburn]] (measurement). Four coherent pages now; if it grows, worth a
-  `token-efficiency` concept page or sub-index.
+  [[codeburn]] (measurement). Tied together in [[token-efficiency]] (the landscape synthesis).

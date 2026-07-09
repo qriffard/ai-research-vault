@@ -61,6 +61,7 @@ health grade** (repeat runs mark findings new / improving / resolved):
   a constrained budget.
 - Complements the vault's token-efficiency thread: [[caveman]] (reduce output),
   [[graphify]] (compress context — unverified), CodeBurn (measure everything).
+  See [[token-efficiency]] for the full landscape.
 
 **Trust note:** local-first, no network egress of session data — low-risk to run.
 Nothing installed or executed during this ingest (GitHub read-only via public API).

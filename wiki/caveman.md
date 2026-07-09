@@ -68,4 +68,4 @@ statistical significance.
 - Meta-point: a repo can be viral *and* honest — the `HONEST-NUMBERS.md` pattern
   (a page that tells you when NOT to use the tool) is worth emulating.
 
-See also [[graphify]] (other token-reduction tool in this vault; unverified).
+See also [[graphify]] (other token-reduction tool in this vault; unverified), and [[token-efficiency]] for how this fits the broader landscape.

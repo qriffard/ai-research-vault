@@ -78,3 +78,14 @@ but far more rigorous. Framed as the input-side complement to [[caveman]] and
 highest-leverage per [[codeburn]]; cross-linked [[graphify]]. Token-efficiency cluster
 now 4 pages — flagged a possible concept page / sub-index if it grows. Updated index
 + _hot.md. GitHub read-only; nothing installed/executed.
+
+## [2026-07-09] create | token-efficiency concept page
+Created [[token-efficiency]] (type: concept) synthesizing the 4 token-efficiency
+tool pages: input compression [[headroom]], output compression [[caveman]],
+context-via-knowledge-graph [[graphify]] (unverified), measurement [[codeburn]].
+Captures the load-bearing principle (input tokens dominate → input-side highest
+leverage), the evaluation-rigor lesson (skill-vs-terse delta, measure fidelity not
+just tokens, trust provider billing, watch young-repo/high-stars), and design ideas
+worth stealing (reversible compression, content-aware routing, honest-numbers docs).
+Added backlinks from caveman/codeburn/headroom; linked from index (Concepts +
+Recently Active) and _hot.md.
