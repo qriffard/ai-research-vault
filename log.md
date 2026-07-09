@@ -64,3 +64,17 @@ context-swamp sessions) → A–F setup grade + paste-ready fixes. Framed as the
 measurement/A-B counterpart to [[caveman]] and cross-linked to [[graphify]];
 personally actionable on my Claude Code/Cursor setup. Updated index + _hot.md.
 GitHub read-only; nothing installed/executed.
+
+## [2026-07-09] ingest | headroom (headroomlabs-ai) — context/input compression layer
+Ingested at human's request. Created [[headroom]] (source). Verified 58,130★
+(Apache-2.0, Python/TS/Rust, created 2026-01-07) via API. Compresses what an agent
+reads (tool outputs/logs/RAG/files) before the LLM via content-aware compressors
+(SmartCrusher JSON, CodeCompressor AST, Kompress-v2-base prose HF model), reversible
+CCR (originals cached + headroom_retrieve), delivered as library/proxy/wrap/MCP,
+local-first. Honest differentiated claim (60–95% JSON / 15–20% coding) backed by an
+agent-evals/ harness with control arms + LLM judge + savings/scorecard/stats (measures
+answer quality). Trust caveat noted: young-repo + high-stars (graphify-style pattern)
+but far more rigorous. Framed as the input-side complement to [[caveman]] and
+highest-leverage per [[codeburn]]; cross-linked [[graphify]]. Token-efficiency cluster
+now 4 pages — flagged a possible concept page / sub-index if it grows. Updated index
++ _hot.md. GitHub read-only; nothing installed/executed.

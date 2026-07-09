@@ -6,6 +6,7 @@
 > scanning everything here. The LLM updates this on every ingest.
 
 ## Recently Active
+- [[headroom]] — context/input compression layer (JSON/AST/prose compressors, reversible CCR, proxy/MCP); 60–95% JSON / 15–20% coding token cut; input-side complement to [[caveman]] (2026-07-09)
 - [[codeburn]] — local-first AI-coding token/cost observability CLI (31 tools); 14-detector `optimize` waste scanner; the A/B measurement tool [[caveman]] recommends (2026-07-09)
 - [[caveman]] — viral (87k★, verified) Claude Code token-compression skill; ~65% *output*-only cut, honest net-negative cases, reusable 3-arm eval methodology (2026-07-09)
 - [[deep-research-agent]] — Elvis Saravia's Claude Agent SDK + Exa research agent; reference architecture for my [[my-find-research-papers-skill]] (2026-07-09)
@@ -34,6 +35,7 @@
 - [[deep-research-agent]] — Claude Agent SDK + Exa deep-research web app (Elvis Saravia / omarsar) (2026-07-09)
 - [[caveman]] — output-token compression Claude Code skill + honest eval harness (Julius Brussee) (2026-07-09)
 - [[codeburn]] — local-first token/cost observability CLI across 31 AI coding tools (Agentseal) (2026-07-09)
+- [[headroom]] — context/input compression layer for AI agents; library/proxy/MCP, reversible (headroomlabs-ai) (2026-07-09)
 
 ## Entities
 - [[stanford-oval]] — Stanford Open Virtual Assistant Lab
@@ -59,4 +61,5 @@
 - https://github.com/omarsar/deep-research-agent — Claude Agent SDK + Exa research agent [ai-agents, research-tooling]
 - https://github.com/JuliusBrussee/caveman — output-token compression skill + eval harness [token-reduction, skill]
 - https://github.com/getagentseal/codeburn — local token/cost observability CLI for AI coding tools [cost-tracking, observability]
+- https://github.com/headroomlabs-ai/headroom — context/input compression layer (library/proxy/MCP) [token-reduction, context-compression]
 - https://exa.ai — Exa neural search API (search / get_contents / find_similar; date filters) [search, research-tooling]
