@@ -108,3 +108,14 @@ All three descend from Anthropic frontend-design and form a connected community;
 cross-linked each other. Verified stars via API; nothing installed/executed.
 Updated index (Recently Active, Sources, Tools & links) + _hot.md. Cluster is 3
 pages — flagged a candidate "anti-slop-design / agents-with-taste" concept page.
+
+## [2026-07-09] create | anti-slop-design concept page
+Created [[anti-slop-design]] (type: concept) synthesizing the "agents with taste"
+cluster: [[impeccable]], [[taste-skill]], [[emil-kowalski-skills]] (all descend
+from Anthropic frontend-design). Captures the shared slop root cause (from
+taste-skill's research/laziness), the recurring "tells", common levers (context
+capture, tunable intensity, controlled vocabulary, deterministic/rules-based
+review), a concrete design checklist for my own HTML artifacts, and the relation
+to [[token-efficiency]] (cheaper vs better; shared deterministic-measurement DNA).
+Added backlinks from all three tool pages; linked from index (Concepts + Recently
+Active) and _hot.md. Flagged [[llm-laziness]] as a still-open candidate page.

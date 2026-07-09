@@ -64,5 +64,6 @@ answer / nested cards always wrong."
   the concrete rules (contrast, type pairing, motion, z-index) are a ready
   checklist. See also the Zoox `visual-explainer` aesthetic already in use.
 
-Related: [[taste-skill]] (sibling anti-slop skill collection), and Anthropic's
-`frontend-design` (shared ancestor).
+Related: [[taste-skill]] and [[emil-kowalski-skills]] (sibling anti-slop skills),
+Anthropic's `frontend-design` (shared ancestor), and [[anti-slop-design]] (the
+cluster synthesis).

@@ -58,5 +58,6 @@ domain expertise."
 - Concrete, expert motion rules (easing choice, reduced-motion, semi-transparent
   shadows over solid borders) directly improve the HTML artifacts I generate.
 
-Related: [[impeccable]], [[taste-skill]] (the anti-slop design cluster); Anthropic
-`frontend-design` (shared lineage of the whole cluster).
+Related: [[impeccable]], [[taste-skill]] (the anti-slop design cluster),
+[[anti-slop-design]] (the cluster synthesis); Anthropic `frontend-design`
+(shared lineage of the whole cluster).

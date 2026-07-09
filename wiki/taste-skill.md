@@ -58,4 +58,5 @@ articulating the *mechanism* behind the failure it fixes.
 - **Concrete anti-slop levers** (VARIANCE/MOTION/DENSITY dials, em-dash ban, GSAP
   skeletons) are a pragmatic checklist for the HTML artifacts I generate.
 
-Related: [[impeccable]] (sibling), Anthropic `frontend-design` (shared lineage).
+Related: [[impeccable]] and [[emil-kowalski-skills]] (siblings), Anthropic
+`frontend-design` (shared lineage), and [[anti-slop-design]] (the cluster synthesis).
