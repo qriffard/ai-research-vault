@@ -1,6 +1,8 @@
 # Hot cache
 
 ## Active threads
+- **[[deep-research-agent]] ingested (Elvis Saravia / @omarsar).** Claude Agent SDK + **Exa** research agent — 3 Exa tools (`search` w/ date filters, `get_contents`, `find_similar`), broad-search→deep-dive→find-similar→synthesize loop. Reference architecture for my [[my-find-research-papers-skill]]; **Exa's `find_similar` + date filters** solve my arXiv-boolean + Semantic-Scholar-429 pain. Small demo repo (~9★, boilerplate README). See also [[elvis-saravia]].
+- **[[caveman]] ingested (Julius Brussee, verified 87k★).** Output-token compression Claude Code skill. Real numbers: ~65% *output* cut (22–87%), 0% input, **adds ~1–1.5k input tokens/turn** → net-negative on terse Q&A / per-request billing; session-level only ~14–21%. Big takeaway = its **3-arm eval methodology** (baseline / terse / skill; honest delta = skill-vs-terse, not skill-vs-baseline) — the claim-vetting bar [[graphify]] failed.
 - **[[graphify]] ingested — carries an unverified trust caveat.** Landing page badge says 3.7k+ GitHub stars; actual repo has 77,603 (>20x mismatch), repo is only 3 months old, package is named `graphifyy` not `graphify`. Nothing installed/executed — flagged to the human, treat as unverified until independently re-checked.
 - Nemotron 3 Ultra ingested (landing page + tech report) — [[nemotron-3-ultra]], new domain for this wiki (LLM model releases, distinct from the STORM cluster)
 - New concept page [[multi-teacher-on-policy-distillation]] (MOPD) extracted from the Nemotron report — watch for it recurring in future post-training paper ingests

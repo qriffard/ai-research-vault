@@ -178,12 +178,18 @@
   },
   "active": "c5f6576c28b9b22c",
   "lastOpenFiles": [
-    "scripts/extract-podcast.py",
+    "wiki/caveman.md",
+    "wiki/elvis-saravia.md",
+    "wiki/deep-research-agent.md",
+    "wiki/nemotron-3-ultra.md",
+    "wiki/multi-teacher-on-policy-distillation.md",
     "wiki/graphify.md",
+    "scripts/extract-podcast.py",
+    "raw/nemotron-3-ultra.md",
+    "raw/nemotron-3-ultra-tech-report.pdf",
+    "raw/nemotron-3-ultra-tech-report.md",
     "raw/graphify.md",
     "raw/graphify-readme.md",
-    "wiki/multi-teacher-on-policy-distillation.md",
-    "wiki/nemotron-3-ultra.md",
     "wiki/storm-claude-skill-video.md",
     "raw/co-storm-demo-video.md",
     "raw/stanford-s-method-turns-claude-into-a-phd-level-research-tea.en.vtt",
@@ -197,8 +203,6 @@
     "raw/assets/co-storm/method.pdf",
     "raw/assets/co-storm/image1.png",
     "raw/assets/co-storm/human_evaluation_demo.pdf",
-    "raw/assets/co-storm/human_eval_pref_rubrics.pdf",
-    "raw/assets/co-storm/human_eval_pref_rag_rubrics.pdf",
-    "raw/assets/co-storm/human_eval_pref.pdf"
+    "raw/assets/co-storm/human_eval_pref_rubrics.pdf"
   ]
 }

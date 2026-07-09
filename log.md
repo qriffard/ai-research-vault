@@ -32,3 +32,24 @@ Sources: `raw/graphify.md` (landing page, direct curl + tag-strip) and `raw/grap
 **Flagged before full capture**: landing page's "3.7k+ GitHub Stars" badge does not match the actual repo (77,603 stars via API, >20x mismatch); repo is 3 months old (created 2026-04-03); installable package named `graphifyy` not `graphify`; repo transferred from an individual account to an org between when the copy was written and capture time. Presented these to the human, who chose full capture with the caveat documented prominently in the page rather than pointer-only or skip. Nothing installed or executed.
 Pages created: `wiki/graphify.md` (source page, trust caveat in a blockquote at the top).
 Updated: `index.md`, `_hot.md`.
+
+## [2026-07-09] ingest | omarsar GitHub scan → deep-research-agent + Elvis Saravia
+Scanned github.com/omarsar (Elvis Saravia / DAIR.AI, 100 repos) for a
+research-paper scanning/extraction system per the human's post. On-point find:
+[[deep-research-agent]] (Next.js + Claude Agent SDK + Exa; 3 Exa tools with date
+filters + find_similar; ~9★ demo, boilerplate README). Created [[deep-research-agent]]
+(source) and [[elvis-saravia]] (entity). Key relevance: Exa neural search + date
+filters + find_similar are a cleaner backend for my find-research-papers skill
+(fixes arXiv-boolean + Semantic-Scholar-429 pain). cc3-deep-research is empty;
+rest of profile is older NLP/teaching material. Updated index (Recently Active,
+Sources, Entities, Tools & links incl. exa.ai) and _hot.md. GitHub read-only via
+public API; nothing installed/executed.
+
+## [2026-07-09] ingest | caveman (JuliusBrussee) — output-token compression skill
+Ingested at human's request. Created [[caveman]] (source). Verified 87,177★ (MIT,
+JS) via API — headline claim reproducible (contrast [[graphify]]). Real numbers
+from docs/HONEST-NUMBERS.md: ~65% output-only reduction (22–87%), 0% input, adds
+~1–1.5k input tok/turn → net-negative on terse Q&A / per-request billing;
+session-level ~14–21%. Main transferable value = its 3-arm eval methodology
+(baseline/terse/skill; honest delta = skill-vs-terse) — a claim-vetting template
+for token-reduction tools. Cross-linked to [[graphify]]. Updated index + _hot.md.
