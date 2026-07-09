@@ -6,6 +6,9 @@
 > scanning everything here. The LLM updates this on every ingest.
 
 ## Recently Active
+- [[cl4r1t4s]] — elder-plinius's extracted-system-prompt collection (45k★) across all major AI products; ⚠ README contains a prompt-injection (not complied with) (2026-07-09)
+- [[opus-think-like-fable]] — Nate Herk video: "process over model" — transplant Fable's process to cheaper Opus via routing + skill extraction (2026-07-09)
+- [[creative-frontend-effects]] — pointer cluster: WebGL/visual-craft building blocks (React Three Fiber, liquid-glass-react, ShaderGradient, liquid-logo) for high-craft frontends (2026-07-09)
 - [[llm-laziness]] — why LLMs truncate/produce brevity (behavioral artifact, not capability): 4 root causes + remediation; mechanism behind [[anti-slop-design]] (2026-07-09)
 - [[anti-slop-design]] — synthesis of the "agents with taste" cluster (impeccable/taste-skill/emil-kowalski-skills): shared slop root cause, common levers, deterministic-review theme (2026-07-09)
 - [[emil-kowalski-skills]] — animation-first design skills for AI agents (Emil Kowalski, animations.dev): review-animations, animation-vocabulary, apple-design (2026-07-09)
@@ -36,6 +39,8 @@
 - [[storm]] — Assisting in Writing Wikipedia-like Articles From Scratch with Large Language Models (2026-06-29)
 - [[co-storm]] — Into the Unknown Unknowns: Engaged Human Learning through Participation in LM Agent Conversations (2026-06-29)
 - [[storm-claude-skill-video]] — Nate Herk: Stanford's Method Turns Claude Into a PhD Level Research Team (2026-06-29)
+- [[opus-think-like-fable]] — Nate Herk: "How I Make Opus Think Like Fable" (process-over-model, model routing) (2026-07-09)
+- [[cl4r1t4s]] — elder-plinius: extracted system prompts across major AI products (⚠ injection in README) (2026-07-09)
 - [[nemotron-3-ultra]] — NVIDIA Nemotron 3 Ultra tech report, 550B/55B MoE hybrid Mamba-Attention model (2026-07-04)
 - [[graphify]] — knowledge-graph skill for AI coding assistants — **unverified trust caveat** (2026-07-05)
 - [[deep-research-agent]] — Claude Agent SDK + Exa deep-research web app (Elvis Saravia / omarsar) (2026-07-09)
@@ -63,6 +68,7 @@
 - [[token-efficiency]] — the token-efficiency tooling landscape: input vs output compression, measurement, eval-rigor lesson (ties headroom/caveman/graphify/codeburn)
 - [[anti-slop-design]] — the "agents with taste" landscape: why LLMs slop, common anti-slop levers, deterministic design review (ties impeccable/taste-skill/emil-kowalski-skills)
 - [[llm-laziness]] — output truncation & brevity bias: root causes (training bias, RLHF/compute, output limits, cognitive shortcuts) + remediation
+- [[creative-frontend-effects]] — WebGL/visual-effects building blocks (R3F, liquid-glass-react, ShaderGradient, liquid-logo) for high-craft frontends
 
 ## Tools & links
 - https://github.com/stanford-oval/storm — STORM source code [knowledge-curation, article-generation]
@@ -76,4 +82,8 @@
 - https://github.com/pbakaus/impeccable — design-language skill for AI coding agents [ai-design, anti-slop]
 - https://github.com/leonxlnx/taste-skill — anti-slop frontend skill collection for AI agents [ai-design, anti-slop]
 - https://github.com/emilkowalski/skills — animation-first design-engineer skills for AI agents [ai-design, animation]
+- https://github.com/pmndrs/react-three-fiber — React renderer for Three.js (WebGL) [frontend, webgl] · see [[creative-frontend-effects]]
+- https://github.com/rdev/liquid-glass-react — Apple Liquid Glass effect for React [frontend, visual-effects]
+- https://shadergradient.co — animated 3D gradients for React/Framer/Figma (ruucm/shadergradient) [frontend, visual-effects]
+- https://github.com/collidingScopes/liquid-logo — animated liquid-metal logo tool [frontend, visual-effects]
 - https://exa.ai — Exa neural search API (search / get_contents / find_similar; date filters) [search, research-tooling]

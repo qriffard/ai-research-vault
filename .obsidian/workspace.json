@@ -178,6 +178,11 @@
   },
   "active": "c5f6576c28b9b22c",
   "lastOpenFiles": [
+    "wiki/cl4r1t4s.md",
+    "wiki/opus-think-like-fable.md",
+    "raw/opus-think-like-fable.md",
+    "raw/how-i-make-opus-think-like-fable-5-easy-steps.en.vtt",
+    "wiki/creative-frontend-effects.md",
     "wiki/llm-laziness.md",
     "wiki/anti-slop-design.md",
     "wiki/emil-kowalski-skills.md",
@@ -210,7 +215,6 @@
     "raw/assets/co-storm/method_backup.pdf",
     "raw/assets/co-storm/method.pdf",
     "raw/assets/co-storm/image1.png",
-    "raw/assets/co-storm/human_evaluation_demo.pdf",
-    "raw/assets/co-storm/human_eval_pref_rubrics.pdf"
+    "raw/assets/co-storm/human_evaluation_demo.pdf"
   ]
 }

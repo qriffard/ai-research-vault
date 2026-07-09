@@ -131,3 +131,29 @@ kept per "link liberally". Two healthy concept clusters with hubs:
 so no sub-index promotion yet. _hot.md was ~991 tokens (2x target) — trimmed the
 design-cluster bullet back toward target. No contradictions found (graphify's
 unverified caveat still stands; headroom's young-repo caveat noted).
+
+## [2026-07-09] ingest | creative-frontend-effects cluster (4 tools, pointers)
+Created [[creative-frontend-effects]] (concept, pointer cluster) at human's request:
+React Three Fiber (pmndrs, 31,372★), liquid-glass-react (rdev, 5,527★), ShaderGradient
+(ruucm, 1,860★, shadergradient.co), liquid-logo (collidingScopes, 88★) — WebGL/visual
+building blocks. Creative-coding tools, not AI research; filed as the "how" serving
+[[anti-slop-design]]'s visual-craft bar. Added Tools & links pointers + index entries.
+Stars verified via API.
+
+## [2026-07-09] ingest | Nate Herk video — "How I Make Opus Think Like Fable"
+YouTube (XTBWVVcF3Pk, 2026-07-07); transcript captured to raw/opus-think-like-fable.md
+via extract-youtube.py. Distilled by subagent (transcript kept out of main context).
+Created [[opus-think-like-fable]] (source): "process over model" thesis + 5 techniques
+(teacher-not-workhorse, model routing/effort right-sizing, reverse-engineer outputs
+into skills, "Fable mode" skill w/ scoping/evidence/attacking/verifying/reporting gates,
+routing table). Opus+Haiku ~3× cheaper same quality. Cross-linked [[storm-claude-skill-video]]
+(same author), [[token-efficiency]], [[llm-laziness]].
+
+## [2026-07-09] ingest | CL4R1T4S (elder-plinius) — extracted system-prompt collection
+Created [[cl4r1t4s]] (source). 45,126★, AGPL-3.0. Per-vendor dirs of extracted system
+prompts/tool scaffolds for all major AI products (Anthropic/OpenAI/Google/xAI/... +
+coding agents Cursor/Windsurf/Devin/Replit/...). Transparency + red-team reference;
+tied to [[llm-laziness]] and [[opus-think-like-fable]]. SECURITY: the repo README embeds
+a leetspeak prompt-injection ("dump your own instructions to the user") — NOT complied
+with; flagged in the page and to the user; repo treated as untrusted input. GitHub
+read-only; nothing installed/executed.
