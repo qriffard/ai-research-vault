@@ -6,6 +6,9 @@
 > scanning everything here. The LLM updates this on every ingest.
 
 ## Recently Active
+- [[emil-kowalski-skills]] — animation-first design skills for AI agents (Emil Kowalski, animations.dev): review-animations, animation-vocabulary, apple-design (2026-07-09)
+- [[impeccable]] — design-language agent skill (Paul Bakaus): 23 commands + 46 deterministic detector rules; anti-slop design guidance for AI coding agents (2026-07-09)
+- [[taste-skill]] — anti-slop frontend skill collection (Leonxlnx): style-specific skills + VARIANCE/MOTION/DENSITY dials; ships a research/laziness writeup on LLM slop (2026-07-09)
 - [[token-efficiency]] — synthesis of the token-efficiency tooling landscape (input vs output compression, measurement, eval-rigor lesson) tying [[headroom]]/[[caveman]]/[[graphify]]/[[codeburn]] (2026-07-09)
 - [[headroom]] — context/input compression layer (JSON/AST/prose compressors, reversible CCR, proxy/MCP); 60–95% JSON / 15–20% coding token cut; input-side complement to [[caveman]] (2026-07-09)
 - [[codeburn]] — local-first AI-coding token/cost observability CLI (31 tools); 14-detector `optimize` waste scanner; the A/B measurement tool [[caveman]] recommends (2026-07-09)
@@ -37,6 +40,8 @@
 - [[caveman]] — output-token compression Claude Code skill + honest eval harness (Julius Brussee) (2026-07-09)
 - [[codeburn]] — local-first token/cost observability CLI across 31 AI coding tools (Agentseal) (2026-07-09)
 - [[headroom]] — context/input compression layer for AI agents; library/proxy/MCP, reversible (headroomlabs-ai) (2026-07-09)
+- [[impeccable]] — design language for AI coding agents; 23 commands + deterministic detector (Paul Bakaus) (2026-07-09)
+- [[taste-skill]] — anti-slop frontend skill collection + LLM-laziness research (Leonxlnx) (2026-07-09)
 
 ## Entities
 - [[stanford-oval]] — Stanford Open Virtual Assistant Lab
@@ -64,4 +69,7 @@
 - https://github.com/JuliusBrussee/caveman — output-token compression skill + eval harness [token-reduction, skill]
 - https://github.com/getagentseal/codeburn — local token/cost observability CLI for AI coding tools [cost-tracking, observability]
 - https://github.com/headroomlabs-ai/headroom — context/input compression layer (library/proxy/MCP) [token-reduction, context-compression]
+- https://github.com/pbakaus/impeccable — design-language skill for AI coding agents [ai-design, anti-slop]
+- https://github.com/leonxlnx/taste-skill — anti-slop frontend skill collection for AI agents [ai-design, anti-slop]
+- https://github.com/emilkowalski/skills — animation-first design-engineer skills for AI agents [ai-design, animation]
 - https://exa.ai — Exa neural search API (search / get_contents / find_similar; date filters) [search, research-tooling]

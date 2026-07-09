@@ -89,3 +89,22 @@ just tokens, trust provider billing, watch young-repo/high-stars), and design id
 worth stealing (reversible compression, content-aware routing, honest-numbers docs).
 Added backlinks from caveman/codeburn/headroom; linked from index (Concepts +
 Recently Active) and _hot.md.
+
+## [2026-07-09] ingest | AI design-quality / anti-slop skills cluster (3 repos)
+Ingested at human's request, back-to-back. Created three source pages:
+- [[impeccable]] (pbakaus, 45,065★, Apache-2.0) — design-language agent skill: 23
+  commands + 46 deterministic no-LLM detector rules + browser iteration; built on
+  Anthropic frontend-design. Author = jQuery UI creator.
+- [[taste-skill]] (Leonxlnx, 61,228★, MIT) — anti-slop frontend skill collection:
+  style-specific skills (minimalist/brutalist/soft/stitch), VARIANCE/MOTION/DENSITY
+  dials, em-dash ban, GSAP skeletons, image-gen reference skills. Ships a
+  research/laziness/ corpus on why LLMs produce slop (training-data bias, RLHF,
+  output limits, cognitive shortcuts) — flagged for a possible [[llm-laziness]]
+  concept page.
+- [[emil-kowalski-skills]] (emilkowalski, 6,828★, MIT) — animation-first design
+  skills (emil-design-eng, review-animations+STANDARDS.md, animation-vocabulary,
+  apple-design). Emil/animations.dev is taste-skill's sponsor.
+All three descend from Anthropic frontend-design and form a connected community;
+cross-linked each other. Verified stars via API; nothing installed/executed.
+Updated index (Recently Active, Sources, Tools & links) + _hot.md. Cluster is 3
+pages — flagged a candidate "anti-slop-design / agents-with-taste" concept page.
