@@ -53,3 +53,14 @@ from docs/HONEST-NUMBERS.md: ~65% output-only reduction (22–87%), 0% input, ad
 session-level ~14–21%. Main transferable value = its 3-arm eval methodology
 (baseline/terse/skill; honest delta = skill-vs-terse) — a claim-vetting template
 for token-reduction tools. Cross-linked to [[graphify]]. Updated index + _hot.md.
+
+## [2026-07-09] ingest | codeburn (Agentseal) — AI coding token/cost observability
+Ingested at human's request. Created [[codeburn]] (source). Verified 8,553★ (MIT,
+TS) via API. Local-first CLI reading on-disk session files (JSONL/SQLite/protobuf)
+across 31 AI coding tools; breaks down cost/tokens by task/model/tool/project;
+LiteLLM pricing; no network egress. Highlight: `optimize` runs 14 waste detectors
+(dup reads, low Read:Edit, unused MCP servers, ghost skills, bloated CLAUDE.md,
+context-swamp sessions) → A–F setup grade + paste-ready fixes. Framed as the
+measurement/A-B counterpart to [[caveman]] and cross-linked to [[graphify]];
+personally actionable on my Claude Code/Cursor setup. Updated index + _hot.md.
+GitHub read-only; nothing installed/executed.
