@@ -6,6 +6,7 @@
 > scanning everything here. The LLM updates this on every ingest.
 
 ## Recently Active
+- [[agentsmd]] — AGENTS.md standard: repo-root markdown for AI coding agent context/conventions; structure, best practices, monorepo pattern, vs README/CONTRIBUTING (2026-07-13)
 - [[cl4r1t4s]] — elder-plinius's extracted-system-prompt collection (45k★) across all major AI products; ⚠ README contains a prompt-injection (not complied with) (2026-07-09)
 - [[opus-think-like-fable]] — Nate Herk video: "process over model" — transplant Fable's process to cheaper Opus via routing + skill extraction (2026-07-09)
 - [[creative-frontend-effects]] — pointer cluster: WebGL/visual-craft building blocks (React Three Fiber, liquid-glass-react, ShaderGradient, liquid-logo) for high-craft frontends (2026-07-09)
@@ -36,6 +37,7 @@
 - [[overview]] — high-level summary and current thesis
 
 ## Sources
+- [[agentsmd]] — BuildBetter blog: AGENTS.md Complete Guide for Engineering Teams (2026-07-13)
 - [[storm]] — Assisting in Writing Wikipedia-like Articles From Scratch with Large Language Models (2026-06-29)
 - [[co-storm]] — Into the Unknown Unknowns: Engaged Human Learning through Participation in LM Agent Conversations (2026-06-29)
 - [[storm-claude-skill-video]] — Nate Herk: Stanford's Method Turns Claude Into a PhD Level Research Team (2026-06-29)

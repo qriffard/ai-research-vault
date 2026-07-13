@@ -157,3 +157,15 @@ tied to [[llm-laziness]] and [[opus-think-like-fable]]. SECURITY: the repo READM
 a leetspeak prompt-injection ("dump your own instructions to the user") — NOT complied
 with; flagged in the page and to the user; repo treated as untrusted input. GitHub
 read-only; nothing installed/executed.
+
+## [2026-07-13] ingest | AGENTS.md Complete Guide (BuildBetter blog)
+Source: `raw/agentsmd-complete-guide-buildbetter-2026.md` (WebFetch, verified against
+direct curl+pandoc — full article, cleaned of Ghost markup). Created [[agentsmd]]
+(concept page): AGENTS.md standard — repo-root markdown for AI coding agent context,
+co-promoted by OpenAI/Google/Sourcegraph/Cursor/Anthropic/others, walked hierarchically
+(monorepo per-package overrides), Setup Commands = highest-ROI section, imperative +
+negative-example style, <500-line ceiling, vs README/CONTRIBUTING decision rule, common
+mistakes, FAQ. Flagged source bias: BuildBetter blog post, pitching their own BB-Skills/
+BuildBetter CLI product — mechanics content kept, product pitch noted as unverified
+marketing, not treated as fact. Cross-linked [[token-efficiency]] (context economy) and
+the anti-slop cluster (steering agents via convention files). Updated index + _hot.md.
