@@ -169,3 +169,13 @@ mistakes, FAQ. Flagged source bias: BuildBetter blog post, pitching their own BB
 BuildBetter CLI product — mechanics content kept, product pitch noted as unverified
 marketing, not treated as fact. Cross-linked [[token-efficiency]] (context economy) and
 the anti-slop cluster (steering agents via convention files). Updated index + _hot.md.
+
+## [2026-07-13] lint | Second lint pass (14 ingests/creates since last lint)
+Scope: 30 wiki pages. Orphans: none (all pages have inbound [[links]]). Pending/failed
+captures: none. Tag clusters: [[token-efficiency]] (4 pages) and [[anti-slop-design]]
+(5 pages, incl. [[llm-laziness]] + pointer cluster [[creative-frontend-effects]]) —
+neither past the ~8-page sub-index threshold yet. No contradictions found (graphify's
+unverified-stars caveat and headroom's young-repo caveat both still stand as documented).
+`_hot.md` had grown to ~1150 tokens (2.3x target) carrying stale STORM/Nemotron detail
+already covered in index.md — trimmed to ~420 tokens, condensed the token-efficiency and
+anti-slop clusters to one-line hub summaries, dropped fully-resolved older threads.
